@@ -38,9 +38,10 @@ The application allows users to:
 
 ## How to install
 - Go to github (link: https://github.com/csc301-2024-f/assignment-2-ai-app-xinqiyue) and click on code button.
+- If the repository is private, use another link: https://github.com/xinqiyue/DecisionMakerWeb
 - Copy the url.
 - Type 'git clone' and the url you copied in the terminal.
-- Type 'cd' and the repository name in the terminal (assignment-2-ai-app-xinqiyue).
+- Type 'cd' and the repository name in the terminal (assignment-2-ai-app-xinqiyue or DecisionMakerWeb if use another link).
 - Type node 'server.js' to start the app
 - Copy the url it returns in any web browser like chrome
 - You can now see main interface of the app and try to create decisions and options to make a choice.
