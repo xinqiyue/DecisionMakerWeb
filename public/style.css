@@ -1,0 +1,141 @@
+/* Center content on page with side padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Headers */
+h1 {
+    text-align: center;
+    color: #4A90E2;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    padding: 8px;
+    width: 350px; /* Increased width for longer text box */
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 12px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Larger Start Selection Button */
+button#startSelection {
+    font-size: 18px;
+    padding: 12px 20px;
+}
+
+/* Decision and Option Lists */
+.decision-list, .option-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Ensure options and decision buttons align properly */
+.decision-item, .option-item {
+    display: flex;
+    justify-content: space-between; /* Align text to the left, buttons to the right */
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 40px;
+    width: 100%; /* Ensure full width for items */
+}
+
+/* Align buttons to the right within the container */
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 10px; /* Adds space between each button */
+    width: auto;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+/* Ensure the text part of options does not push buttons */
+.option-text {
+    flex-grow: 1;
+    word-wrap: break-word;
+    padding-right: 10px;
+}
+
+/* Align buttons to the right in decision list */
+.decision-item button, .option-item button {
+    margin-left: 10px;
+    /* Add margin-left for spacing between text and button */
+}
+
+/* Popup for random selection */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+#popup p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+/* Additional Styles for Option Section */
+#decisionDetail {
+    margin-top: 20px;
+}
+
+#decisionDetail input[type="text"] {
+    width: 350px; /* Longer width for option input field */
+}
+
+#decisionName {
+    font-weight: bold;
+    color: #333;
+}

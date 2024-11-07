@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decision Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decision Maker</h1>
+
+        <h2>Create a New Decision</h2>
+        <input id="decisionInput" type="text" placeholder="Decision Name">
+        <button onclick="createDecision()">Create Decision</button>
+
+        <h2>Decisions</h2>
+        <ul id="decisionList" class="decision-list"></ul>
+
+        <div id="decisionDetail" style="display: none;">
+            <h2>Options for <span id="decisionName"></span></h2>
+            <input id="optionInput" type="text" placeholder="Option Name">
+            <button onclick="addOption()">Add Option</button>
+
+            <ul id="optionsList" class="option-list"></ul>
+            <button id="startSelection" onclick="selectRandom()">Start Selection</button>
+        </div>
+
+        <div id="popup" style="display: none;">
+            <p>Randomly Selected Option: <span id="randomOption"></span></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
